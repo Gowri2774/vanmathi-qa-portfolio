@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,10 +21,445 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="portfolio-container">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-content">
+            <h1 class="nav-title">Vanmathi M</h1>
+            <div class="nav-menu">
+              <button class="nav-link active" data-section="home">Home</button>
+              <button class="nav-link" data-section="about">About</button>
+              <button class="nav-link" data-section="skills">Skills</button>
+              <button class="nav-link" data-section="projects">Projects</button>
+              <button class="nav-link" data-section="contact">Contact</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg">
+          <div class="bg-circle bg-circle-1"></div>
+          <div class="bg-circle bg-circle-2"></div>
+          <div class="bg-circle bg-circle-3"></div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-content animate-fade-in">
+            <h1 class="hero-title">
+              <span class="gradient-text">Vanmathi M</span>
+            </h1>
+            <p class="hero-subtitle">
+              Aspiring QA Engineer | Passionate About Software<br />
+              Quality & Automation
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" data-section="projects">
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+                View My Work
+              </button>
+              <button class="btn btn-outline">
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7,10 12,15 17,10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Download Resume
+              </button>
+            </div>
+          </div>
+          
+          <!-- Profile Picture Placeholder -->
+          <div class="profile-section animate-fade-in">
+            <div class="profile-container">
+              <div class="profile-image">
+                <svg class="profile-icon" width="128" height="128" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <!-- Floating Elements -->
+              <div class="floating-element floating-1"></div>
+              <div class="floating-element floating-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 13l3 3 7-7"/>
+            <path d="M21 21H3"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="section-container">
+          <h2 class="section-title">About Me</h2>
+          
+          <div class="about-grid">
+            <div class="about-text animate-fade-in">
+              <p class="about-paragraph">
+                I'm a recent MCA graduate from VIT University with a strong passion for software testing. 
+                I've gained knowledge in both manual testing and automation using Selenium WebDriver. 
+                I enjoy ensuring product quality by identifying and reporting bugs.
+              </p>
+              <p class="about-paragraph">
+                My goal is to begin my career as a QA Engineer and grow within the software testing field. 
+                I'm dedicated to continuous learning and staying updated with the latest testing methodologies 
+                and tools in the industry.
+              </p>
+            </div>
+
+            <div class="education-section animate-fade-in">
+              <h3 class="subsection-title">
+                <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                Education
+              </h3>
+              
+              <div class="education-cards">
+                <div class="card education-card">
+                  <div class="card-content">
+                    <div class="education-info">
+                      <div class="education-icon mca-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                      </div>
+                      <div class="education-details">
+                        <h4 class="education-degree">Master of Computer Applications</h4>
+                        <p class="education-school">VIT Vellore</p>
+                        <div class="education-meta">
+                          <span class="education-years">2022 – 2024</span>
+                          <span class="education-cgpa">CGPA: 7.93</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card education-card">
+                  <div class="card-content">
+                    <div class="education-info">
+                      <div class="education-icon bca-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                          <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                      </div>
+                      <div class="education-details">
+                        <h4 class="education-degree">Bachelor of Computer Applications</h4>
+                        <p class="education-school">VIT Vellore</p>
+                        <div class="education-meta">
+                          <span class="education-years">2019 – 2022</span>
+                          <span class="education-cgpa">CGPA: 7.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="section-container">
+          <h2 class="section-title">Skills & Expertise</h2>
+
+          <div class="skills-grid">
+            <!-- Technical Skills -->
+            <div class="skills-category animate-fade-in">
+              <h3 class="skills-title">Technical Skills</h3>
+              <div class="skills-cards">
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4"/>
+                    <path d="M20 16v-3a2 2 0 0 0-2-2h-4"/>
+                    <circle cx="12" cy="12" r="1"/>
+                  </svg>
+                  <p class="skill-name">Manual Testing</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16,18 22,12 16,6"/>
+                    <polyline points="8,6 2,12 8,18"/>
+                  </svg>
+                  <p class="skill-name">Functional Testing</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                  </svg>
+                  <p class="skill-name">Regression Testing</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16,18 22,12 16,6"/>
+                    <polyline points="8,6 2,12 8,18"/>
+                  </svg>
+                  <p class="skill-name">Selenium WebDriver</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16,18 22,12 16,6"/>
+                    <polyline points="8,6 2,12 8,18"/>
+                  </svg>
+                  <p class="skill-name">Java</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                  </svg>
+                  <p class="skill-name">MySQL</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 1v6m0 6v6"/>
+                    <path d="M1 12h6m6 0h6"/>
+                  </svg>
+                  <p class="skill-name">Jira</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16,18 22,12 16,6"/>
+                    <polyline points="8,6 2,12 8,18"/>
+                  </svg>
+                  <p class="skill-name">HTML/CSS</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-category animate-fade-in">
+              <h3 class="skills-title">Soft Skills</h3>
+              <div class="skills-cards">
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                  <p class="skill-name">Team Collaboration</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                  <p class="skill-name">Problem Solving</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                  <p class="skill-name">Communication</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                  </svg>
+                  <p class="skill-name">Adaptability</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12,6 12,12 16,14"/>
+                  </svg>
+                  <p class="skill-name">Time Management</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 1v6m0 6v6"/>
+                    <path d="M1 12h6m6 0h6"/>
+                  </svg>
+                  <p class="skill-name">Attention to Detail</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 1v6m0 6v6"/>
+                    <path d="M1 12h6m6 0h6"/>
+                  </svg>
+                  <p class="skill-name">Critical Thinking</p>
+                </div>
+                <div class="skill-card">
+                  <svg class="skill-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                  <p class="skill-name">Creativity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="section-container">
+          <h2 class="section-title">Academic Projects</h2>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="card project-card project-1">
+              <div class="card-content">
+                <div class="project-header">
+                  <div class="project-icon project-icon-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                  </div>
+                  <h3 class="project-title">Cyberbullying Detection System</h3>
+                </div>
+                <p class="project-description">
+                  Machine learning-based system using WhatsApp chat data to detect abusive language and notify guardians via SMS.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag tech-tag-purple">Python</span>
+                  <span class="tech-tag tech-tag-purple">Selenium WebDriver</span>
+                  <span class="tech-tag tech-tag-purple">Scikit-Learn</span>
+                  <span class="tech-tag tech-tag-purple">Pandas</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card project-card project-2">
+              <div class="card-content">
+                <div class="project-header">
+                  <div class="project-icon project-icon-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                  <h3 class="project-title">Online Course Management System</h3>
+                </div>
+                <p class="project-description">
+                  A full-featured course portal supporting student registration, quizzes, and certificate generation.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag tech-tag-blue">HTML</span>
+                  <span class="tech-tag tech-tag-blue">CSS</span>
+                  <span class="tech-tag tech-tag-blue">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="section-container">
+          <h2 class="section-title">Get In Touch</h2>
+
+          <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info animate-fade-in">
+              <h3 class="contact-title">Contact Information</h3>
+              
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="contact-icon contact-icon-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="contact-details">
+                    <h4 class="contact-label">Email</h4>
+                    <p class="contact-value">vanudhaniya0509@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon contact-icon-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="contact-details">
+                    <h4 class="contact-label">Phone</h4>
+                    <p class="contact-value">+91 8270553532</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon contact-icon-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                      <rect x="2" y="9" width="4" height="12"/>
+                      <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                  </div>
+                  <div class="contact-details">
+                    <h4 class="contact-label">LinkedIn</h4>
+                    <p class="contact-value">Connect with me</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container animate-fade-in">
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                  </svg>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scroll to Top Button -->
+      <button class="scroll-top-btn" id="scrollTopBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 15l-6-6-6 6"/>
+        </svg>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
