@@ -238,6 +238,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .profile-image::before {
@@ -249,6 +250,7 @@ body {
   position: absolute;
   top: 4px;
   left: 4px;
+  z-index: 0;
 }
 
 .profile-photo {
@@ -256,6 +258,7 @@ body {
   height: calc(100% - 8px);
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
   position: relative;
   z-index: 1;
 }
