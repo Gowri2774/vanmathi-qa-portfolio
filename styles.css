@@ -251,6 +251,15 @@ body {
   left: 4px;
 }
 
+.profile-photo {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
 .profile-icon {
   width: 8rem;
   height: 8rem;
